@@ -1,4 +1,4 @@
-name: Patch and Build
+name: Release
 
 on:
   push:
@@ -47,5 +47,5 @@ jobs:
           tag_name: commit-${{ steps.short_sha.outputs.sha_short }}
           generate_release_notes: true
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_KEY }}
+          GITHUB_TOKEN: ${{ secrets.Asiaria }}
           GITHUB_REPOSITORY: Asiaria/Folia
